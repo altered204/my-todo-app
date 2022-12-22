@@ -1,10 +1,5 @@
 import streamlit as st
 import functions
-import os
-
-if not os.path.exists("todos.txt"):
-    with open("todos.txt", 'w') as file:
-        pass
 
 todos = functions.get_todos()
 
